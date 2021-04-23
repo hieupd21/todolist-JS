@@ -1,0 +1,120 @@
+* {
+    font-family: 'Bai Jamjuree', Poppins;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+body {
+    background-image: linear-gradient(120deg, #a29bfe, #00cec9);
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header,
+.todo-form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.todo-form input,
+.todo-form button {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: white;
+}
+
+.todo-input {
+    min-width: 30%;
+}
+
+.todo-form button {
+    background-color: #ff9f43;
+    color: white;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.todo-form button:hover {
+    background-color: #e67e22;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 35%;
+    list-style: none;
+}
+
+.todo {
+    margin: .5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+.todo li {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.trash-btn,
+.complete-btn {
+    color: white;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.trash-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.trash-btn:hover {
+    background-color: #c0392b;
+}
+
+.complete-btn {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.complete-btn:hover {
+    background-color: #16a085;
+}
+
+.completed {
+    opacity: .5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(10deg);
+    opacity: 0;
+}
